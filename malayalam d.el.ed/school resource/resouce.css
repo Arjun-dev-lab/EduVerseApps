@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background: #3a5311;
+    background: #E2725B;
     color: white;
     padding: 20px;
     text-align: center;
@@ -39,7 +39,7 @@ h2 {
 }
 
 .semester-button {
-    background-color: #3a5311;
+    background-color: #E2725B;
     color: white;
     border: none;
     padding: 15px 25px;
@@ -52,9 +52,10 @@ h2 {
 }
 
 .semester-button:hover {
-    background-color: #45a049;
+    background-color: #ffffff;
     transform: translateY(-3px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    color: #E2725B;
 }
 
 footer {
@@ -90,7 +91,8 @@ body:hover {
 }
 
 header:hover {
-    background-color: #388e3c; /* Darken header on hover */
+    background-color: #ffcbc0; /* Darken header on hover */
+    color: black;
 }
 
 h2:hover {
