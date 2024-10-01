@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+h1 {
+    margin-left: 10px;
+}
+h2{
+    color: #4CAF50;
+}
+
+.nav-btn {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-btn:focus {
+    outline: none;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #4CAF50;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+.sidebar .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+}
+
+.content {
+    padding: 20px;
+    padding-top: 7em;
+}
+
+.content p {
+    font-size: 18px;
+}
+.head-div{
+    display: grid;
+}
+.para{
+    font-size: 11px;
+    text-align: end;
+    color: #575757;
+}
+/* App container styles */
+.apps-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.app {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.app h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+.app p {
+    font-size: 16px;
+    color: #333;
+}
+
+.app a {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+
+.play-icon {
+    width: 70px;
+    height: 24px;
+    margin-right: 10px;
+}
+/* About Section */
+.about-section {
+    background-color: #f9f9f9;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.about-section h2, .about-section h3 {
+    font-size: 24px;
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-section ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.about-section ul li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.about-section ul li:before {
+    content: "•"; /* Custom bullet point */
+    color: #4CAF50;
+    font-size: 22px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+.about-section ul li strong {
+    color: #4CAF50;
+}
+
+/* For H3 tags */
+.about-section h3 {
+    margin-top: 30px;
+    font-size: 22px;
+    color: #4CAF50;
+}
+.App-head{
+    margin-top: 1em;
+}
+/* Contact Section */
+.contact-section {
+    padding: 20px;
+}
+
+.contact-section h2 {
+    margin-bottom: 10px;
+}
+
+.contact-section label {
+    display: block;
+    margin-top: 10px;
+}
+
+.contact-section input, 
+.contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-section button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.response-message {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 20px;
+    }
+
+    .about-section h2, .about-section h3 {
+        font-size: 22px;
+    }
+
+    .about-section p, .about-section ul li {
+        font-size: 14px;
+    }
+}
+
+/* Make the page responsive */
+@media screen and (max-width: 600px) {
+    .app h2 {
+        font-size: 18px;
+    }
+
+    .app p {
+        font-size: 14px;
+    }
+}

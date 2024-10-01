@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #eaeaea; /* Light gray background */
+    color: #333;
+    transition: background-color 0.5s ease; /* Smooth background color transition */
+}
+
+header {
+    background: #4CAF50; /* Darker green */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    border-bottom: 5px solid #388e3c; /* Bottom border */
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    transition: color 0.3s ease; /* Smooth color transition for the heading */
+}
+
+h2 {
+    margin: 20px 0;
+    font-size: 1.8em;
+    color: #4CAF50; /* Green color for subheadings */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+#resources {
+    max-width: 800px; /* Max width for the resources section */
+    margin: 0 auto; /* Center the section */
+    background: white; /* White background for contrast */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+#resources ul {
+    list-style: none;
+    padding: 0;
+}
+
+#resources li {
+    margin: 15px 0; /* Spacing between list items */
+}
+
+#resources a {
+    text-decoration: none;
+    color: #4CAF50; /* Green link color */
+    background: #f9f9f9; /* Light background for links */
+    padding: 10px 15px; /* Padding around links */
+    border-radius: 5px; /* Rounded corners for buttons */
+    display: inline-block; /* Inline block for padding */
+    transition: background 0.3s ease, color 0.3s ease; /* Transition for background and color */
+}
+
+#resources a:hover {
+    background: #4CAF50; /* Dark green background on hover */
+    color: white; /* White text on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 5px solid #4CAF50; /* Top border */
+    transition: background-color 0.5s ease; /* Smooth footer background transition */
+}
+
+footer a {
+    color: #4CAF50; /* Green link color in footer */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header {
+        padding: 15px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2em; /* Smaller heading on mobile */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Smaller subheading on mobile */
+    }
+}

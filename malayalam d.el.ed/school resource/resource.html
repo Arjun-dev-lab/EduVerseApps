@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D.El.Ed Malayalam</title>
+    <link rel="stylesheet" href="resouce.css">
+</head>
+<body>
+    <header>
+        <h1>D.El.Ed E-Resources</h1>
+        <p>Welcome to the D.El.Ed resource hub. Select a semester to access essential materials.</p>
+    </header>
+    
+    <main>
+        <section id="semesters">
+            <h2>Select Your Semester</h2>
+            <div class="button-container">
+                <button class="semester-button" onclick="navigateToSemester('Class 1')">Class 1</button>
+                <button class="semester-button" onclick="navigateToSemester('Class2')">Class 2</button>
+                <button class="semester-button" onclick="navigateToSemester('Class3')">Class 3</button>
+                <button class="semester-button" onclick="navigateToSemester('Class4')">Class 4</button>
+                <button class="semester-button" onclick="navigateToSemester('Class5')">Class 5</button>
+                <button class="semester-button" onclick="navigateToSemester('Class6')">Class 6</button>
+                <button class="semester-button" onclick="navigateToSemester('Class7')">Class 7</button>
+            </div>
+        </section>
+    </main>
+    
+    <script>
+        // Function to navigate to the corresponding semester page
+        function navigateToSemester(semester) {
+            window.location.href = semester + '.html'; // Assumes pages are named 'semester1.html', etc.
+        }
+    </script>
+
+</body>
+</html>

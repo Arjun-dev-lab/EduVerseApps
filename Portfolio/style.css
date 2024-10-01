@@ -1,0 +1,118 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+/* Section Layout */
+.section {
+    height: 100vh;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFEBEE; /* Default background color */
+}
+
+/* Section Colors */
+#home {
+    background-color: #FFEBEE;
+}
+
+#about {
+    background-color: #E3F2FD;
+}
+
+#projects {
+    background-color: #E8F5E9;
+}
+
+#contact {
+    background-color: #FFFDE7;
+}
+
+
+/* Button styles */
+.btn {
+    background-color: #E2725B;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+input, textarea {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+button.btn {
+    max-width: 200px;
+    margin: 20px auto;
+}
+
+/* Positioning for Each Section */
+.content {
+    text-align: center;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .content {
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+}
+.image-fluid {
+    max-width: 100%; /* Allow the image to take up the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center the image horizontally */
+}
+
+.about-photo {
+    max-width: 300px; /* Set a max width for the image */
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners to the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for depth */
+}
