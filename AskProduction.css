@@ -1,0 +1,138 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f3f4f7;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1606770343270-f67785e3ac2f');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    animation: fadeIn 1.5s ease-in;
+}
+
+.hero p {
+    font-size: 24px;
+    animation: fadeIn 2s ease-in;
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 32px;
+    color: #006699;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.features {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.feature {
+    background: #f3f4f7;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.feature:hover {
+    transform: scale(1.05);
+}
+
+.feature h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.feature p {
+    font-size: 16px;
+    color: #555;
+}
+
+.icon {
+    font-size: 40px;
+    color: #006699;
+}
+
+/* Vision Section */
+.vision {
+    display: none;
+    padding: 50px 20px;
+    background-color: #f7f8fa;
+    text-align: center;
+}
+
+.vision h2 {
+    font-size: 28px;
+    color: #006699;
+    margin-bottom: 20px;
+}
+
+.vision ul {
+    margin: 20px 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.vision ul li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.learn-more-btn {
+    padding: 12px 30px;
+    background-color: #006699;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 2rem;
+}
+
+.learn-more-btn:hover {
+    background-color: #004d66;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
